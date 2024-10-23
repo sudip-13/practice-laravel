@@ -2,10 +2,8 @@
 
 namespace Database\Seeders;
 
-
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-// use \APP\Models\Note;
 
 class DatabaseSeeder extends Seeder
 {
@@ -22,11 +20,9 @@ class DatabaseSeeder extends Seeder
             'id'=>1,
             'name' => 'Test User',
             'email' => 'test@example.com',
-            'password'=> bcrypt('pass123'),
+            'password' => bcrypt('password123'),
         ]);
 
         \App\Models\Note::factory(100)->create();
-
     }
 }
- 

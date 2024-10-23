@@ -1,8 +1,11 @@
-<x-layout>
+<x-app-layout>
     <div class="m-4">
-        <a href="{{ route('note.create')}}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-            New Note
-        </a>
+        <div class="flex justify-center">
+
+            <a href="{{ route('note.create')}}" class=" bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                New Note
+            </a>
+        </div>
     </div>
     <div class="grid grid-cols-1 gap-4">
         @foreach ($notes as $note)
@@ -23,4 +26,4 @@
         @endforeach
         {{ $notes->links()}}
     </div>
-</x-layout>
+</x-app-layout>
